@@ -11,9 +11,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         bind = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bind.root)
-
-
-
         bind.btwatch.setOnClickListener {
             val intent = Intent(this, WatchActivity::class.java)
             startActivity(intent)
